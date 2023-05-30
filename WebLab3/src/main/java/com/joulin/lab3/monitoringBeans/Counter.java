@@ -12,7 +12,6 @@ public class Counter extends NotificationBroadcasterSupport implements CounterMX
     private int missedHitsStreakCount = 0;
     private int sequenceNumber = 1;
 
-
     @Override
     public int addHit(boolean hitResult) {
         return hitResult ? addCorrectHit() : addMissedHit();

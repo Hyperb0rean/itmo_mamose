@@ -82,7 +82,7 @@ public class ClientBean implements Serializable {
 
         if (result != null) {
             this.currentHits.addFirst(result);
-
+            processHandlers(result);
         }
     }
 

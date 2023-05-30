@@ -8,7 +8,6 @@ public class Square implements SquareMXBean, Serializable {
     private final double rectangleCoefficient = 1.0;
     private final double circleCoefficient = Math.PI / 4;
 
-
     @Override
     public double calculateSquare(double r) {
         lastSquare = (triangleCoefficient + rectangleCoefficient + circleCoefficient) * Math.pow(r, 2);
